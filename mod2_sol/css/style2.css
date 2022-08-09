@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size:16px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size:175%;
+}
+
+.container {width:100%;}
+.row{
+    border:1px solid black;
+    background-color: gray;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    position:relative;
+}
+h2 {
+    border: 1px solid black;
+    font-weight: bold;
+    text-align:center;
+    padding-left: 20px;
+    padding-right:20px;
+    font-size: 125%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    position:absolute;
+    top: -1px;
+    right:-1px;
+
+
+}
+#chicken-head {
+    background-color: rgb(218, 91, 91);
+}
+#beef-head{
+    background-color: red;
+    color:white;
+}
+#sushi-head {
+    background-color: yellow;
+}
+p{
+    clear: both;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom:0px;
+    margin-top:35px;
+}
+
+@media(min-width: 992px) {
+    .col-md-4, .col-md-6, .col-md-12 {
+        float: left;   
+    }
+    .col-md-4{width:33.33%;}
+    .col-md-6{width:50%;}
+    .col-md-12{width:100%;}
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .col-sm-4, .col-sm-6, .col-sm-12 {
+        float:left;
+    }
+    .col-sm-4{width:33.33%;}
+    .col-sm-6{width:50%;}
+    .col-sm-12{width:100%;}
+}
+
+
+
+
+/*
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.row{
+    width: 28.33%;
+    margin-top:1%;
+    border: 5px solid black;
+    background-color: lightgray;
+}
+#chicken-head {
+    background-color: rgb(218, 91, 91);
+}
+#beef-head{
+    background-color: red;
+    color:white;
+}
+#sushi-head {
+    background-color: yellow;
+}
+h2{
+    font-size: 2vw;
+    width: 35%;
+    margin:0;
+    margin-left:auto;
+    text-align: center;
+    border: 3px solid black;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+p{
+    padding: 3%;
+    size: 90%;
+    font-size: 140%;
+}
+
+
+@media (min-width: 765px) and (max-width: 992px) {
+    .row{
+        width:48%;
+    }
+    #sushi{
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 764px) {
+    .row{
+        flex-basis: 100%;
+    }
+}
+*/
