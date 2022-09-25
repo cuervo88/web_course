@@ -141,8 +141,13 @@ color: #ffd8be;
   color:#3E2F5B;
 
 }
+
 .crazy-legs-text{
   text-transform: uppercase;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
 }
 .row{
   margin-left: 80px;
