@@ -11,7 +11,7 @@ body {
     border-radius: 0;
     border: 0;
     color: #00534c;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin:0;
     padding: 0;
   }
@@ -31,18 +31,21 @@ justify-content: space-between;
   text-align: right;
 }
 .social_icon .fa {
-margin-left:10px;
-padding: 10px;
+margin-left:5px;
+padding: 5px;
 font-size:25px;
 width: auto;
 text-align: center;
 text-decoration: none;
-border-radius: 20%;
-border:2px solid #ffd8be 20%;
+
+
 }
 .fa-facebook-square {
-  border:2px solid #ffd8be 20%;
+
 color: #00534c;
+}
+.fa-envelope{
+  color: #00534c;
 }
 .nav > li > a{
     color: #ffd8be;
@@ -79,6 +82,8 @@ color: #ffd8be;
 .dropdown:hover .dropdown-content {display: block;}
 .container .jumbotron{
     margin-top:20px;
+    margin-left:80px;
+    margin-right:80px;
     padding:0;
     box-shadow:0 0 25px #3F0C1F;
     border:2px solid #3F0C1F;
@@ -139,6 +144,10 @@ color: #ffd8be;
 .crazy-legs-text{
   text-transform: uppercase;
 }
+.row{
+  margin-left: 80px;
+  margin-right: 80px;
+}
 .card a img{
   border: 10px solid #a99b4c;
 }
@@ -180,6 +189,25 @@ color: #ffd8be;
   font-family: 'Roboto', sans-serif;
   font-size:1.4em;
   text-align: justify;
+}
+.parallax {
+  /* The image used */
+  background-image: url("../img/banner.jpg");
+
+  /* Set a specific height */
+  min-height: 250px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.calendar{
+  color:#00534c;
+}
+.te-s{
+  color:#00534c !important;
 }
 @media (min-width:768px) and (max-width:991px){
   .navbar-toggle {
