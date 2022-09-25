@@ -104,10 +104,9 @@ color: #ffd8be;
     bottom: 20%;
     right:0;
     left:0;
-    width:50%;
+    width:20%;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 1.6em;
     display: flex;
     margin:auto;
     background-color: rgba(0,0,0,0.6);
@@ -115,8 +114,8 @@ color: #ffd8be;
     justify-content: center;
     text-justify: auto;
     border: 1px solid #222;
-    height: 20%;
-    font-size: 1.4vw;
+    height: 10%;
+    font-size: 2vw;
     color:gray;
 }
 .jumbotron a span{
@@ -126,6 +125,7 @@ color: #ffd8be;
 }
 .jumbotron span:hover{
   box-shadow: 0 0 10px #999;
+  background-color: rgba(100,100,100,0.6);
 }
 .link-classes:hover{
     box-shadow: 0 0 20px #000;
