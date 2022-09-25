@@ -246,6 +246,10 @@ color: #ffd8be;
         font-size:1em;
         margin-right: 5px;
       }
+      .row{
+        margin-left:0;
+        margin-right: 0;
+      }
 }
 @media (min-width: 1200px){
   .custom-class {
