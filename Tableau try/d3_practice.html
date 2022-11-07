@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+</head>
+
+<body>  
+    <div class="container" id="my_container">
+
+    </div>
+<script>
+    let container = d3.select(".container")
+    d3.csv("data_tableau.csv").then(function(data){
+        data.sort((a,b) =>{
+            return d3.descending(a.date,b.date)
+        })
+        showData(data)
+    });
+
+    function showData(clients){
+        for (let client of clients) {
+            write(client.date + " " + client.value + " "+ client.value2)
+            
+    }
+    };
+function write(text) {
+    container.append("div").text(text)
+}
+</script>
+</body>
