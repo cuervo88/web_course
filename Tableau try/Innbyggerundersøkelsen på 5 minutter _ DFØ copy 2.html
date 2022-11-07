@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter -->
+<html lang="nb" dir="ltr" prefix="og: https://ogp.me/ns#" class=" js" style="--eq-body-width:1560;">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="shortcut icon" href="https://dfo.no/themes/dfo-platform/drupal-platform-themes/dfo/assets/icons/favicon/favicon.svg">
+  <script type="text/javascript" src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/258a197b3e"></script><script src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/nr-1216.min.js.download"></script><script type="text/javascript" defer="" async="" src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/matomo.js.download"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"258a197b3e",applicationID:"763188964"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <style id="gutenberg-palette">:root .has-white-color{color:#FFFFFF}:root .has-white-background-color{background-color:#FFFFFF}:root .has-dark-grey-color{color:#EFEFEF}:root .has-dark-grey-background-color{background-color:#EFEFEF}:root .has-primary-dark-blue-color{color:#0E2A49}:root .has-primary-dark-blue-background-color{background-color:#0E2A49}:root .has-primary-light-blue-color{color:#005B91}:root .has-primary-light-blue-background-color{background-color:#005B91}:root .has-primary-light-blue-graded-color{color:#BFD6E3}:root .has-primary-light-blue-graded-background-color{background-color:#BFD6E3}:root .has-warning-yellow-color{color:#F7B715}:root .has-warning-yellow-background-color{background-color:#F7B715}:root .has-warning-yellow-light-color{color:#FBDB8A}:root .has-warning-yellow-light-background-color{background-color:#FBDB8A}:root .has-secondary-light-blue-color{color:#80CFF1}:root .has-secondary-light-blue-background-color{background-color:#80CFF1}:root .has-startoff-light-blue-color{color:#C0E2EE}:root .has-startoff-light-blue-background-color{background-color:#C0E2EE}:root .has-sea-green-color{color:#80C6D2}:root .has-sea-green-background-color{background-color:#80C6D2}:root .has-tertiary-green-color{color:#00AB84}:root .has-tertiary-green-background-color{background-color:#00AB84}:root .has-tertiary-green-light-color{color:#80D5C1}:root .has-tertiary-green-light-background-color{background-color:#80D5C1}</style>
+  <script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://sporing.dfo.no/" : "http://sporing.dfo.no/");_paq.push(["setSiteId", "48"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);_paq.push(["setCustomUrl", window.location.href.replace("/nb", "").replace("/nn", "").replace("/en", "")]);
+  _paq.push(['enableHeartBeatTimer']);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
+  <link rel="canonical" href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter">
+  <meta name="description" content="Innbyggerne er svært fornøyd med Norge som land å bo og leve i. De er også fornøyd med kommunen de bor i. Opplevelsene av det totale tjenestetilbudet opplever en liten nedgang, samtidig som de fleste enkelttjenester gjør det bedre enn i 2019.">
+  <meta property="og:description" content="Innbyggerne er svært fornøyd med Norge som land å bo og leve i. De er også fornøyd med kommunen de bor i. Opplevelsene av det totale tjenestetilbudet opplever en liten nedgang, samtidig som de fleste enkelttjenester gjør det bedre enn i 2019.">
+  <meta name="Generator" content="Drupal 9 (https://www.drupal.org)">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="alternate" hreflang="nb" href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter">
+
+  <title>Innbyggerundersøkelsen på 5 minutter | DFØ</title>
+  <link rel="stylesheet" media="all" href="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/css_Pbp_fKlKHE2nedlzEKVKGv_R26hAsGE5FwTzLwbacCE.css">
+  <link rel="stylesheet" media="all" href="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/css_iRx7gQIvPHJbOq3bw09g0hS7cfVTcPkj6_fiZhwA9aw.css">
+  <link rel="stylesheet" media="print" href="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/css_XqN_BjeducMnvEJFuZoGR9aIXlT6-TLssj5IzPj_d_E.css">
+
+  <link rel="stylesheet" media="print" href="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/tableau.css">
+  <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><script src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/configs.php" async="" defer=""></script><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style>
+
+
+
+<!-- Her starter ny kode -->
+
+<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+<script text="text/javascript">
+  function initViz() {
+    let tableauPlaceholder = document.getElementById("vizContainer");
+    let url = "https://public.tableau.com/views/sikkerhetmedvirkendefaktorutkast/Konsekvenser?:language=en-US&:display_count=n&:origin=viz_share_link"
+
+    let options = {
+                        hideTabs: true,
+                        hideToolbar: true,
+                        onFirstInteractive: function () {
+                            document.getElementById('getData').disabled = false; // Enable our button
+                        }
+                    };
+    viz = new tableau.Viz(tableauPlaceholder, url, options);
+  };
+
+  // Resize
+  
+  window.addEventListener('resize', resizeViz);
+
+  function resizeViz() {
+
+    var width = document.getElementById("copy_element").clientWidth;
+
+    var height = document.getElementById("copy_element").clientHeight;
+
+    viz.setFrameSize(width, height);
+    console.log(width,height);
+
+};
+
+// Get Data
+function getUnderlyingData(){
+                sheet = viz.getWorkbook().getActiveSheet().getWorksheets().get("Konsekvenser av den verste hendelsen");
+		 // If the active sheet is not a dashboard, then you can just enter:
+		 // viz.getWorkbook().getActiveSheet();
+                options = {
+                    maxRows: 10, // Max rows to return. Use 0 to return all rows
+                    ignoreAliases: false,
+                    ignoreSelection: true,  
+                    includeAllColumns: false
+                };
+
+                sheet.getUnderlyingTablesAsync(options).then(function(t){
+                       table = t;
+			var tgt = document.getElementById("dataTarget");
+			tgt.innerHTML = "<h4>Underlying Data:</h4><p>" + JSON.stringify(table.getData()) + "</p>";
+                });
+            }
+
+
+</script>
+
+<!-- Her slutter ny kode -->
+</head>
+  <body  onload="initViz();"  class="path-node page-node-type-page eqlCkr_side_left" data-once="form-single-submit"><div id="MathJax_Message" style="display: none;"></div>
+      <a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter#main-content" class="visually-hidden focusable">
+      Hopp til hovedinnhold
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+    <div class="layout-container">
+
+  <header role="banner">
+    <div class="main-container">
+
+    <div class="wrapper-logo-header ">
+        <div class="region-header">
+    <div id="block-dfo-site-branding" class="block block-system block-system-branding-block">
+  
+    
+    <a href="https://dfo.no/" rel="home" class="logo">
+    <img src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/logo.svg" alt="Hjem">
+  </a>
+</div>
+
+  </div>
+
+      <div class="header-navigation">
+        <div class="controlswrapper">
+          <div class="main-menu-outside-burger">
+            
+          </div>
+          <button class="searchtoggle">Søk</button>
+                    <button class="menutoggle" aria-label="Åpne meny">Meny</button>
+        </div>
+
+        <div class="searchwrapper">
+          <form class="views-exposed-form" data-drupal-selector="views-exposed-form-site-search-search-results" action="https://dfo.no/search" method="get" id="views-exposed-form-site-search-search-results" accept-charset="UTF-8" data-once="form-updated" data-drupal-form-fields="edit-search-api-fulltext">
+  <div class="js-form-item form-item js-form-type-textfield form-item-search-api-fulltext js-form-item-search-api-fulltext form-no-label">
+        <input placeholder="Søk" data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" class="form-text">
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input alt="Søk" data-drupal-selector="edit-submit-site-search" type="image" id="edit-submit-site-search" value="Bruk" src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/search.svg" class="image-button js-form-submit form-submit">
+</div>
+
+
+</form>
+
+        </div>
+      </div>
+    </div>
+
+                <h1 class="site-name" hidden="">DFØ</h1>
+    
+    <nav class="main-menu js-dfo-closed js-dfo-active" aria-hidden="true">
+        
+              <ul class="menu">
+                    <li class="menu-item menu-item--expanded">
+        <a href="https://dfo.no/kundesider" hreflang="nb" data-drupal-link-system-path="node/2163">Kundesider</a>
+                                <ul class="menu js-dfo-closed">
+                    <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kundesider" class="overview-page" data-drupal-link-system-path="node/2163">Kundesider</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kundesider/lonnstjenester" data-drupal-link-system-path="node/2166">Lønnstjenester</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/kundesider/frister-lonn-og-regnskap" data-drupal-link-system-path="node/2993">Frister for lønn og regnskap</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kundesider/kundenotater" data-drupal-link-system-path="node/2990">Kundenotater</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kundesider/fakturahandtering" data-drupal-link-system-path="node/1212">Fakturahåndtering</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/kundesider/reiseregning-utgiftsrefusjon-og-honorarer-honorarmottakere" data-drupal-link-system-path="node/1226">Reiseregning, utgiftsrefusjon og honorarer for honorarmottakere</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/kontakt-oss/kundesenter">Kundesenter</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/kundesider/logg-inn" data-drupal-link-system-path="node/1272">Logg inn</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kundesider/regnskapstjenester" data-drupal-link-system-path="node/2165">Regnskapstjenester</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://status.dfo.no/">Driftsstatus</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kundesider/bestill-tilganger" data-drupal-link-system-path="node/1189">Bestill tilganger</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kundesider/standardvilkar-databehandleravtale-og-arbeidsdeling" data-drupal-link-system-path="node/1242">Standardvilkår, databehandleravtale og arbeidsdeling</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/kundesider/reiseregning-og-utgiftsrefusjon-ansatte" data-drupal-link-system-path="node/1227">Reiseregning og utgiftsrefusjon for ansatte</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/kontakt-oss/kundesenter-p%C3%A5-nett">Kundesenter på nett</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="https://dfo.no/fagomrader" hreflang="nb" data-drupal-link-system-path="node/2161">Fagområder</a>
+                                <ul class="menu js-dfo-closed">
+                    <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/fagomrader" class="overview-page" data-drupal-link-system-path="node/2161">Fagområder</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/fagomrader/faglige-nettverk" data-drupal-link-system-path="node/1410">Faglige nettverk</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/fagomrader/forvaltningsanalyse" data-drupal-link-system-path="node/2995">Forvaltningsanalyse</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://laeringsplattformen.dfo.no/">Kompetanseutvikling (Læringsplattformen)</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://arbeidsgiver.dfo.no/">Ledelse og HR (Statens arbeidsgiverportal)</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://anskaffelser.no/">Offentlige anskaffelser (anskaffelser.no)</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/fagomrader/veiledere-veiledningsnotat-og-eksempler" data-drupal-link-system-path="node/1355">Veiledere, veiledningsnotat og eksempler</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/fagomrader/tilskuddsforvaltning" data-drupal-link-system-path="node/1209">Tilskuddsforvaltning</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/fagomrader/okonomiregelverket" data-drupal-link-system-path="node/1185">Økonomiregelverket</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/fagomrader/etats-og-virksomhetsstyring" data-drupal-link-system-path="node/2184">Etats- og virksomhetsstyring</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/fagomrader/statlig-regnskap" data-drupal-link-system-path="node/2177">Statlig regnskap</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/fagomrader/utredning-og-analyse-av-statlige-tiltak" data-drupal-link-system-path="node/2189">Utredning og analyse av statlige tiltak</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/fagomrader/effektiv-ressursbruk" data-drupal-link-system-path="node/2195">Effektiv ressursbruk</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="https://dfo.no/kurs-og-seminarer" hreflang="nb" data-drupal-link-system-path="node/2992">Kurs, seminarer og konferanser</a>
+                                <ul class="menu js-dfo-closed">
+                    <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/kurs">Kurs og seminarer</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/kurs-seminarer-og-konferanser/konferanser-i-dfo" data-drupal-link-system-path="node/3004">Konferanser</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://laeringsplattformen.difi.no/">Læringsplattformen (e-læringskurs)</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/fagomrader/faglige-nettverk">Faglige nettverk</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/rapporter" hreflang="nb" data-drupal-link-system-path="node/2991">Rapporter</a>
+              </li>
+                <li class="menu-item menu-item--expanded menu-item--active-trail js-dfo-active">
+        <a href="https://dfo.no/undersokelser" hreflang="nb" data-drupal-link-system-path="node/2182">Undersøkelser</a>
+                                <ul class="menu">
+                    <li class="menu-item menu-item--last">
+        <a href="https://anskaffelser.no/innkjopsledelse/modenhet-og-selvevaluering">Anskaffelsesundersøkelsen</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--active-trail menu-item--last">
+        <a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021" data-drupal-link-system-path="node/2194">Innbyggerundersøkelsen 2021</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/undersokelser/statsansatteundersokelsen-2021" data-drupal-link-system-path="node/2129">Statsansatteundersøkelsen 2021</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="https://dfo.no/nokkeltall-og-statistikk" hreflang="nb" data-drupal-link-system-path="node/2183">Nøkkeltall og statistikk</a>
+                                <ul class="menu js-dfo-closed">
+                    <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/nokkeltall-og-statistikk/klimafotavtrykket-til-offentlige-anskaffelser" data-drupal-link-system-path="node/2064">Klimafotavtrykket til offentlige anskaffelser</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/nokkeltall-og-statistikk/utslippsfaktorer-statlige-innkjop" data-drupal-link-system-path="node/2066">Utslippsfaktorer for statlige innkjøp</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/nokkeltall-og-statistikk/organisering-og-ansatte-i-staten" data-drupal-link-system-path="node/2192">Organisering og ansatte i staten</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/nokkeltall-og-statistikk/utgifter-til-offentlige-innkjop" data-drupal-link-system-path="node/1917">Utgifter til offentlige innkjøp</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://statsregnskapet.dfo.no/">Statsregnskapet.no</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <a href="https://dfo.no/om-dfo" hreflang="nb" data-drupal-link-system-path="node/2162">Om DFØ</a>
+                                <ul class="menu js-dfo-closed">
+                    <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo" class="overview-page" data-drupal-link-system-path="node/2162">Om DFØ</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/om-dfo/kontakt-oss" data-drupal-link-system-path="node/1195">Kontakt oss</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/ledige-stillinger" data-drupal-link-system-path="node/1194">Ledige stillinger</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/dette-jobber-vi-med" data-drupal-link-system-path="node/1196">Dette jobber vi med</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/bedre-stat-prisen" data-drupal-link-system-path="node/1198">Bedre stat-prisen</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/blogg" data-drupal-link-system-path="blogg">DFØ-bloggen</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/om-dfo/dfos-profilveileder" data-drupal-link-system-path="node/2979">DFØs profilveileder</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/nn/om-dfo/organisasjon-og-leiing-i-dfo" data-drupal-link-system-path="node/1362">Organisasjon og ledelse i DFØ</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/dfos-strategi" data-drupal-link-system-path="node/1414">DFØs strategi</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/nn/om-dfo/instruks-tildelingsbrev-og-arsrapport" data-drupal-link-system-path="node/1363">Instruks, tildelingsbrev og årsrapport</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/om-dfo/dfos-tjenester" data-drupal-link-system-path="node/1848">DFØs tjenester</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/om-dfo/nyhetsbrev-fra-dfo" data-drupal-link-system-path="node/1990">Nyhetsbrev fra DFØ</a>
+              </li>
+                <li class="menu-item menu-item--collapsed menu-item--last">
+        <a href="https://dfo.no/nn/om-dfo/presse" data-drupal-link-system-path="node/3437">Presse</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+
+      <div class="mobile-only">
+        
+        <div class="searchwrapper">
+          <form class="views-exposed-form" data-drupal-selector="views-exposed-form-site-search-search-results" action="https://dfo.no/search" method="get" id="views-exposed-form-site-search-search-results" accept-charset="UTF-8" data-once="form-updated" data-drupal-form-fields="edit-search-api-fulltext">
+  <div class="js-form-item form-item js-form-type-textfield form-item-search-api-fulltext js-form-item-search-api-fulltext form-no-label">
+        <input placeholder="Søk" data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext" name="search_api_fulltext" value="" size="30" maxlength="128" class="form-text">
+
+        </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input alt="Søk" data-drupal-selector="edit-submit-site-search" type="image" id="edit-submit-site-search" value="Bruk" src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/search.svg" class="image-button js-form-submit form-submit">
+</div>
+
+
+</form>
+
+        </div><!-- /.searchwrapper -->
+      </div><!-- /.mobile-only -->
+    </nav>
+
+    </div><!-- /.main-container -->
+  </header>
+
+  <main role="main">
+      <div class="region-breadcrumb">
+    <div class="main-container">
+      <div id="block-dfo-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+        <nav role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">Navigasjonssti</h2>
+    <ol>
+              <li>
+                      <a href="https://dfo.no/">Hjem</a>
+                  </li>
+              <li>
+                      <a href="https://dfo.no/undersokelser">Undersøkelser</a>
+                  </li>
+              <li>
+                      <a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021">Innbyggerundersøkelsen 2021</a>
+                  </li>
+              <li>
+                      Innbyggerundersøkelsen på 5 minutter
+                  </li>
+                </ol>
+  </nav>
+
+  </div>
+
+    </div>
+  </div>
+
+    
+      <div class="region-content">
+    <div class="main-container">
+      <div data-drupal-messages-fallback="" class="hidden"></div>
+<div id="block-dfo-page-title" class="block block-core block-page-title-block">
+  
+    
+      
+  <h1><span>Innbyggerundersøkelsen på 5 minutter</span>
+</h1>
+
+
+  </div>
+<div id="block-facetsblock" class="block block-facets-block facets-wrapper">
+  
+    
+      
+  </div>
+<div id="block-dfo-content" class="block block-system block-system-main-block">
+  
+    
+      
+<article role="article" class="node node--type-page node--view-mode-full has-sidebar">
+  
+    
+  <div class="node__content-wrapper">
+
+    <div class="node__content">
+      
+            <div class="field--name-field-intro-text field--label-hidden"><p>Innbyggerne er svært fornøyd med Norge som land å bo og leve i. De er også fornøyd med kommunen de bor i. Opplevelsene av det totale tjenestetilbudet opplever en liten nedgang, samtidig som de fleste enkelttjenester gjør det bedre enn i 2019.</p>
+</div>
+      
+      
+
+
+
+            <div class="field--name-body">
+
+
+
+
+<div class="wp-block-drupal-section" id="copy_element">
+
+
+<p>Vi ser tegn til at pandemien kan ha påvirket tilfredsheten med
+ulike tjenester.&nbsp;De ulike helsetjenestene, både kommunale og
+statlige, øker samtlige i skår sammenlignet med 2019.&nbsp;Deres
+håndtering av smitte som Norges førstelinje har høstet tilfredshet
+hos innbyggerne.&nbsp;Tilfredsheten med det kommunale kultur- og
+fritidstilbudet derimot er redusert.&nbsp;Dette overrasker neppe
+noen med tanke på de lange periodene med nedstengning og fravær av
+kultur- og fritidstilbud.<br>
+<br>
+Årets innbyggerundersøkelse har satt ekstra fokus på tilliten
+innbyggerne har til hverandre og de formelle institusjonene som
+utgjør staten Norge. Norge nyter høy tillit på begge fronter, og vi
+ser jevnt over få regionale forskjeller. Det å sørge for lav
+utenforskap både på arbeidsmarkedet og i frivilligheten i samfunnet
+vil være viktig for å opprettholde denne tilliten. En stat som også
+opptrer redelig og levere på demokratiske verdier vil være
+sentralt. Å fortsette målingen av innbyggernes oppfatning om
+korrupsjon blir derfor viktig i årene fremover.</p>
+
+<p>Et mønster som viser seg tydelig i forholdene som får de laveste
+skårene i innbyggerundersøkelsen 2021, er medvirkning. I synet på
+hvilken grad det politiske systemet muliggjør innflytelse,
+muligheten for påvirkning i kommunale beslutningsprosesser og
+hvorvidt politikere lytter til innbyggernes synspunkter er det
+betydelig rom for forbedring. Rom for forbedring mener innbyggerne
+også det er i myndighetenes arbeid med å tilpasse seg fremtidige
+utfordringer.</p>
+
+<h3><span id="anchorTOC_Innbyggerne_fortsatt_sv%C3%A6rt_tilfreds_med_%C3%A5_bo_i_Norge_0">Innbyggerne fortsatt svært tilfreds med å bo i Norge</span></h3>
+
+<p>Innbyggerundersøkelsen viser at innbyggerne fremdeles er svært
+fornøyde med Norge som land å bo og leve i. Med kommunen som sted å
+bo og leve er innbyggerne godt fornøyd. Som figuren under viser er
+forskjellen i tilfredshet med å bo og leve i Norge og å bo og leve
+i kommunen større enn noen gang. Forskjellen i skår er ved årets
+undersøkelse på ti poeng. Norge oppnår en skår på 86, og har med
+det holdt seg stabil siden 2019. Kommunen synker med fire i skår
+sammenlignet med 2019.</p>
+
+
+<!-- Her er data vis -->
+<div id="vizContainer" class="tableauclass" style="height:600px; width:100%" title="">
+
+<button id="getData" onclick="getUnderlyingData()" class="btn" disabled>Get Data</button>
+</div>
+<div id="dataTarget"></div>
+<!-- Her slutter data viz -->
+
+
+<p>Utover Norge som land å bo og leve i svarer respondentene i
+innbyggerundersøkelsen også på hvor tilfreds de er med tilværelsen
+sin. På dette punktet ser vi – i motsetning til spørsmålet om å bo
+og leve i Norge – en nedgang i skår. Ved årets undersøkelse gir
+innbyggerne tilværelsen en skår på 76. Dette er en nedgang på fire
+poeng fra 2019.</p>
+
+<h3><span id="anchorTOC_Tilfredshet_med_tjenester_1">Tilfredshet med tjenester</span></h3>
+
+<p>Alt i alt er innbyggerne delvis fornøyde med det helhetlige
+statlige tjenestetilbudet, og gir en skår på 68. Dette er en
+nedgang fra 2019 da skåren var 69. Det statlige tjenestetilbudet
+oppnår også sin laveste skår siden første gjennomføring av
+innbyggerundersøkelsen i 2010 da skåren var 67. Innbyggerne
+vurderer kvaliteten på helheten av det <em>kommunale</em>
+tjenestetilbudet til å være delvis godt. Det får en skår på 67.
+Dette er en marginal nedgang fra 2019.</p>
+
+<p>Av de statlige tjenestene er innbyggerne mest fornøyde med
+sykehusene, som får en skår på 77. Blant samtlige statlige
+tjenester er det kun høgskoler og universiteter som går tilbake fra
+2019. Blant de resterende tjenestene opplever politiet og forsvaret
+mest fremgang sammenlignet med 2019. Politiet går frem med seks
+poeng og oppnår dermed sin høyeste skår siden
+innbyggerundersøkelsens første gjennomføring i 2010. Barne-,
+ungdoms- og familieetaten og NAV skårer lavest av de statlige
+tjenestene, henholdsvis 57 og 58. For NAV er det forskjell mellom
+personer som oppgir at de har erfaring med tjenesten og de som ikke
+har det. Les mer om disse forskjellen og innbyggernes vurdering av
+hvordan det er <strong>å bo i Norge</strong> generelt, <a href="https://dfo.no/rapporter-og-statistikk/undersokelser/innbyggerundersokelsen-2021/a-bo-i-norge">her</a>.</p>
+
+<p>Av de kommunale tjenestene opplever grunnskole størst
+tilbakegang sammenlignet med 2019. I motsatt ende av skalaen
+opplever kollektivtilbudet størst fremgang mellom 2019 og 2021.
+Samlet sett går ni av tolv tjenester frem fra
+innbyggerundersøkelsen forrige gjennomføring. Dette kan virke
+paradoksalt når vurderingen av det helhetlige kommunale
+tjenestetilbudet går tilbake. Les mer om dette, og innbyggernes
+vurdering hvordan det er <strong>å bo i kommunen</strong> generelt,
+<a href="https://dfo.no/rapporter-og-statistikk/undersokelser/innbyggerundersokelsen-2021/a-bo-i-kommunen">her</a>.</p>
+
+<h3><span id="anchorTOC_Tillit_2">Tillit</span></h3>
+
+<p>Årets innbyggerundersøkelse har fokusert spesielt på tillit. Det
+skilles mellom sosial og institusjonell tillit. Førstnevnte handler
+om tilliten man har til medmennesker, sistnevnte om tilliten man
+har til samfunnsinstitusjoner, politiske institusjoner og
+forvaltningen. Hvorvidt mennesker stoler på hverandre og de som
+styrer landet er viktig for at et demokrati skal fungere godt.
+Dette har blitt spesielt tydelig under Covid-19-pandemien.</p>
+
+
+
+</div></div>
+      
+    </div>
+
+    <div class="sidebar">
+              <div id="stickyMenu" class="sticky-menu" style="padding-top: 178px;">
+          <div class="toc" id="toc">
+            <h4 class="toc__header">Innholdsfortegnelse</h4>
+            <span id="tocArrow" class="toc-arrow" style="top: 44px;"></span>
+          <ol class="toc__list toc__list-first"><li class="toc__list-item is-active-li"><a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter#anchorTOC_Innbyggerne_fortsatt_sv%C3%A6rt_tilfreds_med_%C3%A5_bo_i_Norge_0">Innbyggerne fortsatt svært tilfreds med å bo i Norge</a></li><li class="toc__list-item"><a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter#anchorTOC_Tilfredshet_med_tjenester_1">Tilfredshet med tjenester</a></li><li class="toc__list-item"><a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter#anchorTOC_Tillit_2">Tillit</a></li><li class="toc__list-item"><a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter#anchorTOC_Korrupsjon_3">Korrupsjon</a></li><li class="toc__list-item"><a href="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter#anchorTOC_Demokrati_og_deltakelse_4">Demokrati og deltakelse</a></li></ol></div>
+        </div>
+          </div>
+
+  </div>
+
+  
+  <div class="date bottom">
+    Oppdatert: 5. november  2021
+  </div>
+
+      <div class="node__contact-wrapper">
+      <h2>Kontakt</h2>
+      
+      
+      <div class="field--name-field-contact-person">
+      <ul>
+                  <li class="field--name-field-contact-person"><div class="profile profile--391 profile--type--employee profile--view-mode--contact clearfix">
+  
+
+  Lars-Hugo
+  Andersen:
+  0047 911 64 490
+      /
+    <a href="mailto:lars-hugo.andersen@dfo.no">lars-hugo.andersen@dfo.no</a>
+
+</div>
+</li>
+              </ul>
+    </div>
+  
+    </div>
+  
+</article>
+
+  </div>
+
+    </div>
+  </div>
+
+    
+      <div class="region-content-tertiary">
+    <div class="main-container">
+      <div id="block-webform" class="block block-webform block-webform-block">
+  
+    
+      <span id="webform-submission-feedback-node-2135-form-ajax-content"></span><div id="webform-submission-feedback-node-2135-form-ajax" class="webform-ajax-form-wrapper" data-effect="fade" data-progress-type="throbber"><form class="webform-submission-form webform-submission-add-form webform-submission-feedback-form webform-submission-feedback-add-form webform-submission-feedback-node-2135-form webform-submission-feedback-node-2135-add-form js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-feedback-node-2135-add-form" action="https://dfo.no/undersokelser/innbyggerundersokelsen-2021/innbyggerundersokelsen-pa-5-minutter" method="post" id="webform-submission-feedback-node-2135-add-form" accept-charset="UTF-8" data-once="form-updated" data-drupal-form-fields="edit-submit-yes-submit,edit-answer-no,edit-feedback-more-info,edit-actions-submit,edit-url">
+  
+  <div data-drupal-selector="edit-flexbox" class="webform-flexbox js-webform-flexbox webform-flexbox--center js-form-wrapper form-wrapper" id="edit-flexbox"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div id="edit-title" class="js-form-item form-item js-form-type-webform-markup form-item-title js-form-item-title form-no-label">
+        <h2>Fant du det du lette etter?</h2>
+        </div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div data-drupal-selector="edit-flexbox-buttons" class="webform-flexbox js-webform-flexbox webform-flexbox--center js-form-wrapper form-wrapper" id="edit-flexbox-buttons"><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div data-drupal-selector="edit-submit-yes" class="form-actions webform-actions js-form-wrapper form-wrapper" id="edit-submit-yes"><input class="webform-button--submit button button--primary js-form-submit form-submit" data-drupal-selector="edit-submit-yes-submit" data-disable-refocus="true" type="submit" id="edit-submit-yes-submit" name="op" value="Ja" data-once="drupal-ajax">
+
+</div>
+</div></div><div class="webform-flex webform-flex--1"><div class="webform-flex--container"><div class="webform-element--title-inline js-form-item form-item js-form-type-checkbox form-item-answer-no js-form-item-answer-no">
+        <input tabindex="-1" data-drupal-selector="edit-answer-no" type="checkbox" id="edit-answer-no" name="answer_no" value="Nei" class="form-checkbox">
+
+        <label tabindex="0" role="group" for="edit-answer-no" class="option">Nei</label>
+      </div>
+</div></div></div>
+</div></div></div>
+<div class="js-webform-states-hidden js-form-wrapper" data-drupal-states="{&quot;visible&quot;:{&quot;.webform-submission-feedback-node-2135-add-form :input[name=\u0022answer_no\u0022]&quot;:{&quot;checked&quot;:true}}}" style="display: none;"><div class="js-form-item form-item js-form-type-webform-markup form-item-confirmation-no js-form-item-confirmation-no form-no-label" id="edit-confirmation-no">
+        <h3>Det beklager vi!</h3>
+Hva lette du etter? Bruk gjerne stikkord
+        </div>
+</div><div class="js-webform-states-hidden js-form-item form-item js-form-type-textarea form-item-feedback-more-info js-form-item-feedback-more-info form-no-label" style="display: none;">
+        <div>
+  <textarea data-drupal-selector="edit-feedback-more-info" data-drupal-states="{&quot;visible&quot;:{&quot;.webform-submission-feedback-node-2135-add-form :input[name=\u0022answer_no\u0022]&quot;:{&quot;checked&quot;:true}}}" id="edit-feedback-more-info" name="feedback_more_info" rows="5" cols="60" class="form-textarea"></textarea>
+</div>
+
+        </div>
+<div class="js-webform-states-hidden form-actions webform-actions js-form-wrapper form-wrapper" data-drupal-selector="edit-actions" data-drupal-states="{&quot;visible&quot;:{&quot;.webform-submission-feedback-node-2135-add-form :input[name=\u0022answer_no\u0022]&quot;:{&quot;checked&quot;:true}}}" id="edit-actions--3" style="display: none;"><input class="webform-button--submit button button--primary js-form-submit form-submit" data-drupal-selector="edit-actions-submit" data-disable-refocus="true" type="submit" id="edit-actions-submit" name="op" value="Send svar" data-once="drupal-ajax">
+
+</div>
+<input autocomplete="off" data-drupal-selector="form-mirwbhrqnnjqzggbqpuw7lxhvbzwrqi3mbl-jjlflla" type="hidden" name="form_build_id" value="form-miRWBhRQNNJQzggbQPUw7lxHVbzWRQi3mbl-JjLFllA">
+<input data-drupal-selector="edit-webform-submission-feedback-node-2135-add-form" type="hidden" name="form_id" value="webform_submission_feedback_node_2135_add_form">
+<div class="url-textfield js-form-wrapper form-wrapper" style="display: none !important;"><div class="js-form-item form-item js-form-type-textfield form-item-url js-form-item-url">
+      <label for="edit-url">Leave this field blank</label>
+        <input autocomplete="off" data-drupal-selector="edit-url" type="text" id="edit-url" name="url" value="" size="20" maxlength="128" class="form-text">
+
+        </div>
+</div>
+
+
+  
+</form>
+</div>
+  </div>
+
+    </div>
+  </div>
+
+  </main>
+
+      <footer role="contentinfo">
+        <div class="region-footer is-dfo-portal">
+    <div class="main-container">
+
+      <div class="footer__left-contact-wrapper">
+                  
+              <ul class="menu">
+                    <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/kontakt-oss" hreflang="nb" data-drupal-link-system-path="node/1195">Kontakt DFØ</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo" hreflang="nb" data-drupal-link-system-path="node/2162">Om DFØ</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/om-dfo/ledige-stillinger" hreflang="nb" data-drupal-link-system-path="node/1194">Jobb i DFØ</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/en/norwegian-agency-public-and-financial-management-dfo" hreflang="en" data-drupal-link-system-path="node/2173">English</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://dfo.no/nn/personvern" hreflang="nn" data-drupal-link-system-path="node/1359">Personvern</a>
+              </li>
+                <li class="menu-item menu-item--last">
+        <a href="https://einnsyn.no/sok?sort=">Offentlig postjournal (eInnsyn)</a>
+              </li>
+        </ul>
+  
+
+
+
+      </div>
+
+      <div class="footer__contact-wrapper">
+        <a href="https://dfo.no/" class="footer__link-logo"><img class="footer__logo" width="280" alt="Direktoratet for forvaltning og økonomistyrings logo" src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/logo-white-footer.svg"></a>
+
+        <ul class="footer__contact">
+          <li>
+            Tlf: <a href="tel:+4740007997">400 07 997</a>
+          </li>
+          <li>
+            E-post: <a href="mailto:postmottak@dfo.no">postmottak@dfo.no</a>
+          </li>
+          <li>Org. nr. 986 252 932</li>
+        </ul>
+
+        <ul class="footer__links">
+          <li><a href="https://dfo.no/om-dfo" target="_blank">Om DFØ</a></li>
+          <li><a href="https://dfo.no/om-dfo/personvern" target="_blank">Personvern</a></li>
+          <li><a href="https://dfo.no/english" target="_blank">English</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+    </footer>
+  
+</div>
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/2135","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"nb"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"core\/drupal.ajax,core\/internal.jquery.form,dfo\/crediting,dfo\/global-styling,dfo_gutenberg_cards\/block-view,dfo_gutenberg_carousel\/block-view,dfo_gutenberg_experience\/block-view,dfo_gutenberg_timeline\/block-view,matomo\/matomo,rm_gutenberg_advanced_table\/block-view,rm_gutenberg_collapsible\/block-view,rm_gutenberg_contactinfo\/block-view,rm_gutenberg_content_list\/block-view,rm_gutenberg_entity_reference\/block-view,rm_gutenberg_factbox\/block-view,rm_gutenberg_manual_content\/block-view,rm_gutenberg_mathjax\/block-view,rm_gutenberg_media\/block-view,rm_gutenberg_tabs\/block-view,rm_shy_replacement\/block-view,social_media_links\/social_media_links.theme,system\/base,webform\/webform.ajax,webform\/webform.element.details.save,webform\/webform.element.details.toggle,webform\/webform.element.flexbox,webform\/webform.element.message,webform\/webform.form","theme":"dfo","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/undersokelser\/innbyggerundersokelsen-2021\/innbyggerundersokelsen-pa-5-minutter?ajax_form=1":true,"\/search":true},"matomo":{"disableCookies":false,"trackMailto":true},"ajax":{"edit-actions-submit":{"callback":"::submitAjaxForm","event":"click","effect":"fade","speed":500,"progress":{"type":"throbber","message":""},"disable-refocus":true,"url":"\/undersokelser\/innbyggerundersokelsen-2021\/innbyggerundersokelsen-pa-5-minutter?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Send svar"}},"edit-submit-yes-submit":{"callback":"::submitAjaxForm","event":"click","effect":"fade","speed":500,"progress":{"type":"throbber","message":""},"disable-refocus":true,"url":"\/undersokelser\/innbyggerundersokelsen-2021\/innbyggerundersokelsen-pa-5-minutter?ajax_form=1","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"Ja"}}},"user":{"uid":0,"permissionsHash":"64c368c1ce5fe462d888d84b2cd3995f17392610933e4c90f919ca2991dcc55d"}}</script>
+<script src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/js_0ZALLSF6Es98r2SNfD7rBBHvR9CgKLOWzj_USQnwqVc.js.download"></script>
+<script src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/MathJax.js.download"></script>
+<script src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/js_tbj5Bae_Y6aKSAaFZ1zlVJ1OXOw86BI63IcA8KmALDg.js.download"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"258a197b3e","applicationID":"763188964","transactionName":"YAEANhRWWUQHUEBQW1lLIwESXlhZSXdGTERWCD4MCVNSayVcWk1GWAgOBxRreVgCVmJQUUAnDQwSRVhbClZGFApBDQcV","queueTime":0,"applicationTime":789,"atts":"TEYDQFxMSko=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<img src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/45975525" style="position: absolute; left: -9999px;"><img id="acestream__script-ym-t" src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/37429375" style="position: absolute; left: -9999px;"><script src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/metrika.js.download"></script><div id="drupal-live-announce" class="visually-hidden" aria-live="polite" aria-busy="false"></div><iframe src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/index.html" id="__as_sframe" style="position: absolute; left: -9999px; bottom: 0px; width: 200px; height: 100px"></iframe><script src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/saved_resource" id="0ac87ecd9fdf0d50d6331f29a2f01877f82a39f0"></script><img src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/46515147" style="position: absolute; left: -9999px;"><img src="./Innbyggerundersøkelsen på 5 minutter _ DFØ_files/imp" style="position: absolute; left: -9999px;"><div id="torrent-scanner-popup" style="display: none;"></div></body></html>
