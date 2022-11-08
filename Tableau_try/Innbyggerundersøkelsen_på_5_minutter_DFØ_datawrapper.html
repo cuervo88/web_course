@@ -124,59 +124,7 @@
 
 <!-- Her starter ny kode -->
 
-<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
 
-<script text="text/javascript">
-  function initViz() {
-    let tableauPlaceholder = document.getElementById("vizContainer");
-    let url = "https://public.tableau.com/views/sikkerhetmedvirkendefaktorutkast/Konsekvenser?:language=en-US&:display_count=n&:origin=viz_share_link"
-
-    let options = {
-                        hideTabs: true,
-                        hideToolbar: true,
-                        onFirstInteractive: function () {
-                            document.getElementById('getData').disabled = false; // Enable our button
-                        }
-                    };
-    viz = new tableau.Viz(tableauPlaceholder, url, options);
-  };
-
-  // Resize
-  
-  window.addEventListener('resize', resizeViz);
-
-  function resizeViz() {
-
-    var width = document.getElementById("copy_element").clientWidth;
-
-    var height = document.getElementById("copy_element").clientHeight;
-
-    viz.setFrameSize(width, height);
-    console.log(width,height);
-
-};
-
-// Get Data
-function getUnderlyingData(){
-                sheet = viz.getWorkbook().getActiveSheet().getWorksheets().get("Konsekvenser av den verste hendelsen");
-		 // If the active sheet is not a dashboard, then you can just enter:
-		 // viz.getWorkbook().getActiveSheet();
-                options = {
-                    maxRows: 10, // Max rows to return. Use 0 to return all rows
-                    ignoreAliases: false,
-                    ignoreSelection: true,  
-                    includeAllColumns: false
-                };
-
-                sheet.getUnderlyingTablesAsync(options).then(function(t){
-                       table = t;
-			var tgt = document.getElementById("dataTarget");
-			tgt.innerHTML = "<h4>Underlying Data:</h4><p>" + JSON.stringify(table.getData()) + "</p>";
-                });
-            }
-
-
-</script>
 
 <!-- Her slutter ny kode -->
 </head>
@@ -568,11 +516,8 @@ sammenlignet med 2019.</p>
 
 
 <!-- Her er data vis -->
-<div id="vizContainer" class="tableauclass" style="height:600px; width:100%" title="">
-
-<button id="getData" onclick="getUnderlyingData()" class="btn" disabled>Get Data</button>
-</div>
-<div id="dataTarget"></div>
+<iframe title="Gas emitions" aria-label="Interactive area chart" id="datawrapper-chart-527DI" src="https://datawrapper.dwcdn.net/527DI/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="507" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
 <!-- Her slutter data viz -->
 
 
